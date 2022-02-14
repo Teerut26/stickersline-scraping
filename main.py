@@ -69,3 +69,4 @@ if __name__ == '__main__':
     for item in scraping.sticker_data:
         res = requests.get(item.fallback_static_url)
         SaveFile(res.content,f"{path_child}_{scraping.sticker_author.replace(' ','-') }",f"{path_child}_{item.id}_{scraping.sticker_author.replace(' ','-')}")
+    input()
